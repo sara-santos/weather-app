@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amiko:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac347ff3ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Aesthetic Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                id="enter-city"
+                placeholder="Search for a city"
+                autofocus="on"
+                autocomplete="off"
+                class="form"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn" id="btn">
+                <i class="fas fa-search"></i>
+              </button>
+              <button
+                class="current-location-button"
+                id="current-location-button"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"><strong>SYDNEY</strong></h1>
+        <h2 id="date"></h2>
+        <h3 id="time"></h3>
+        <div class="mid">
+          <div class="float-left">
+            <span class="temperature" id="temperature">10</span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+            <ul>
+              <li class="description" id="description"></li>
+            </ul>
+          </div>
+          <div class="float-right">
+            <ul>
+              <li>
+                <p class="sunset">Sunset</p>
+                <p id="sunset">°</p>
+                <br />
+              </li>
+              <li>
+                <p class="hum">Humidity</p>
+                <p id="hum">%</p>
+                <br />
+              </li>
+              <li>
+                <p class="win">Wind</p>
+                <p id="win">km/h</p>
+                <br />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="row">
+          <div class="col-sm-2.5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">TUE</h5>
+                <p class="emoji">⛅️</p>
+                <p class="card-text">
+                  9°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2.5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">WED</h5>
+                <p class="emoji">🌦</p>
+                <p class="card-text">
+                  12°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2.5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">THU</h5>
+                <p class="emoji">🌦</p>
+                <p class="card-text">
+                  10°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2.5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">FRI</h5>
+                <p class="emoji">☀️</p>
+                <p class="card-text">
+                  7°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2.5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">SAT</h5>
+                <p class="emoji">🌨</p>
+                <p class="card-text">
+                  4°
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
