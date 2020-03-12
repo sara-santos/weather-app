@@ -51,12 +51,12 @@
             </div>
           </div>
         </form>
-        <h1 id="city"><strong>SYDNEY</strong></h1>
+        <h1 id="city"><strong></strong></h1>
         <h2 id="date"></h2>
         <h3 id="time"></h3>
         <div class="mid">
           <div class="float-left">
-            <span class="temperature" id="temperature">10</span>
+            <span class="temperature" id="temperature"></span>
             <span class="units">
               <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
@@ -64,88 +64,30 @@
             <ul>
               <li class="description" id="description"></li>
             </ul>
+            <img src="" alt="" id="icon" />
           </div>
           <div class="float-right">
             <ul>
               <li>
-                <p class="sunset">Sunset</p>
-                <p id="sunset">°</p>
+                <p class="sunset">Sunset Time</p>
+                <p id="sunset"></p>
                 <br />
               </li>
               <li>
                 <p class="hum">Humidity</p>
-                <p id="hum">%</p>
+                <p id="hum"></p>
                 <br />
               </li>
               <li>
                 <p class="win">Wind</p>
-                <p id="win">km/h</p>
+                <p id="win"></p>
                 <br />
               </li>
             </ul>
           </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <div class="row">
-          <div class="col-sm-2.5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">TUE</h5>
-                <p class="emoji">⛅️</p>
-                <p class="card-text">
-                  9°
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2.5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">WED</h5>
-                <p class="emoji">🌦</p>
-                <p class="card-text">
-                  12°
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2.5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">THU</h5>
-                <p class="emoji">🌦</p>
-                <p class="card-text">
-                  10°
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2.5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">FRI</h5>
-                <p class="emoji">☀️</p>
-                <p class="card-text">
-                  7°
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2.5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">SAT</h5>
-                <p class="emoji">🌨</p>
-                <p class="card-text">
-                  4°
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="https://github.com/sara-santos/weather-app" target="_blank"
-          >GitHub</a
-        >
+        <div class="row" id="forecast"></div>
       </div>
     </div>
     <script src="src/script.js"></script>
